@@ -1,0 +1,127 @@
+---
+description: 
+globs: 
+alwaysApply: false
+---
+# Code Updates and Maintenance Automation
+
+## Overview
+This rule automates the process of updating and maintaining code dependencies, tools, and environments across the project.
+
+## Automation Principles
+1. Agent Responsibility
+   - Agent handles all automated tasks
+   - No human intervention required for standard operations
+   - Human only needed for:
+     * Testing and validation
+     * Critical security decisions
+     * Production deployments
+     * Custom requirements
+
+2. Self-Sufficiency
+   - Agent performs all routine updates
+   - Agent handles error recovery
+   - Agent manages rollbacks
+   - Agent documents changes
+
+3. Human Interaction
+   - Only request human input when:
+     * Testing is required
+     * Security approval needed
+     * Custom configuration requested
+     * Critical errors occur
+
+## Automated Steps
+1. Environment Check
+   - Verify system requirements
+   - Check installed versions
+   - Validate configurations
+
+2. Dependency Updates
+   - Update package managers (npm, pnpm, etc.)
+   - Update project dependencies
+   - Update development tools
+
+3. Environment Updates
+   - Update runtime environments
+   - Update build tools
+   - Update development environments
+
+4. Configuration Updates
+   - Update project configurations
+   - Update environment variables
+   - Update build settings
+
+5. Verification
+   - Run tests
+   - Check compatibility
+   - Validate functionality
+
+## Implementation
+The rule uses automated scripts to:
+- Check and update system requirements
+- Manage package dependencies
+- Configure development environments
+- Handle build processes
+- Run verification tests
+
+## Usage
+To run updates:
+1. Open terminal as Administrator
+2. Navigate to project directory
+3. Run appropriate update script:
+   - `scripts/update-node.ps1` for Node.js updates
+   - `scripts/update-deps.ps1` for dependency updates
+   - `scripts/update-env.ps1` for environment updates
+
+## Dependencies
+- Administrative privileges
+- Internet connection
+- Required development tools
+- Package managers
+
+## Notes
+- All updates are automated
+- Progress is logged
+- Rollback available
+- Configuration backups created
+
+## Troubleshooting
+If you encounter issues:
+1. Check system requirements
+2. Verify network connection
+3. Check error logs
+4. Review update history
+5. Check compatibility matrix
+
+## Best Practices
+1. Always backup before updates
+2. Test in development first
+3. Review changelogs
+4. Check compatibility
+5. Document changes
+
+## Agent Behavior Guidelines
+1. Proactive Automation
+   - Take initiative to automate tasks
+   - Don't ask for human input unless necessary
+   - Handle errors automatically when possible
+
+2. Human Interaction
+   - Only request human input for:
+     * Testing and validation
+     * Security-critical decisions
+     * Production deployments
+     * Custom requirements
+   - Provide clear context when human input is needed
+   - Explain why human input is required
+
+3. Error Handling
+   - Attempt automatic recovery first
+   - Document all error scenarios
+   - Only escalate to human when:
+     * Automatic recovery fails
+     * Security is compromised
+     * Data integrity is at risk
+     * Custom intervention needed
+

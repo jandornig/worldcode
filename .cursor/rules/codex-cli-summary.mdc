@@ -1,0 +1,77 @@
+---
+description: 
+globs: 
+alwaysApply: false
+---
+# OpenAI Codex CLI: Practical Project Guide
+
+## Tech Stack
+- **TypeScript** (main CLI and supporting code)
+- **Rust** (codex-rs subproject)
+- **Node.js** (v22+ required)
+- **pnpm** (preferred package manager)
+- **Vitest** (unit testing)
+- **ESLint + Prettier** (linting/formatting)
+- **Husky** (git hooks)
+
+## System Requirements
+- **OS:** macOS 12+, Ubuntu 20.04+/Debian 10+, or **Windows 11 via WSL2**
+- **Node.js:** v22 or newer (LTS recommended)
+- **Git:** 2.23+ (for PR helpers)
+- **RAM:** 4GB minimum (8GB recommended)
+
+## Setup & Installation
+1. **Install Node.js v22+** (use nvm or nvm-windows for version management)
+2. **Install pnpm:**
+   ```sh
+   corepack enable
+   corepack prepare pnpm@latest --activate
+   ```
+3. **Install dependencies:**
+   ```sh
+   pnpm install
+   ```
+4. **Set your OpenAI API key:**
+   - Export in your shell: `export OPENAI_API_KEY=...`
+   - Or create a `.env` file in the project root.
+5. **Run the CLI:**
+   ```sh
+   codex
+   # or
+   codex "your prompt here"
+   ```
+
+## Windows/WSL2 Notes
+- **Codex CLI does not run natively on Windows.**
+- Use [WSL2](mdc:https:/learn.microsoft.com/en-us/windows/wsl/install) and install Ubuntu or Debian.
+- All commands and development should be run inside the WSL2 shell.
+
+## Development Workflow
+- Create a topic branch from `main` for new features/fixes.
+- Use `pnpm test:watch` for fast feedback.
+- Run checks before pushing:
+  ```sh
+  pnpm test && pnpm run lint && pnpm run typecheck
+  ```
+- Husky enforces pre-commit and pre-push checks.
+- Use `pnpm build` to build the CLI.
+- Debug with Node.js inspector:
+  ```sh
+  node --inspect-brk ./dist/cli.js
+  ```
+- For Rust code, see `codex-rs/README.md` for details.
+
+## Contributing
+- Sign the CLA in your PR: `I have read the CLA Document and I hereby sign the CLA`
+- Keep PRs focused and atomic.
+- Update docs/tests for user-facing changes.
+
+## References
+- Main README: [README.md](mdc:README.md)
+- Example prompts: [codex-cli/examples/prompting_guide.md](mdc:codex-cli/examples/prompting_guide.md)
+- Project agents: [AGENTS.md](mdc:AGENTS.md)
+
+---
+This rule summarizes the practical information for coding and working on the OpenAI Codex CLI project, especially for WSL2/Windows users.
+
+

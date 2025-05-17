@@ -1,0 +1,151 @@
+---
+description: 
+globs: 
+alwaysApply: false
+---
+# Ghostwriting and Worldbuilding Agent
+
+## Project Overview
+Transform the Codex CLI into a simple web-based agent for ghostwriting, worldbuilding, and lore management. Focus on quick, functional solutions over perfect implementations.
+
+## Core Functionality
+1. Document Management
+   - Organize writing projects
+   - Maintain lore databases
+   - Track character development
+   - Manage plot threads
+
+2. Agent Capabilities
+   - Ghostwriting assistance
+   - Worldbuilding organization
+   - Lore management
+   - Plot development
+   - Character development
+
+3. User Interface
+   - Simple web interface
+   - Document viewer/editor
+   - Chat interface
+   - Project navigation
+
+## Implementation Approach
+1. Quick Start
+   - Use existing Codex CLI
+   - Add simple web wrapper
+   - Focus on core features
+   - Minimize complexity
+
+2. File Structure
+   ```
+   /projects
+     /{project-name}
+       /characters
+       /locations
+       /lore
+       /plots
+       /scenes
+       /notes
+   ```
+
+3. Agent Behavior
+   - Maintain file organization
+   - Update documents
+   - Track relationships
+   - Suggest improvements
+   - Handle user requests
+
+## Development Priorities
+1. Essential Features
+   - Basic web interface
+   - Document management
+   - Chat functionality
+   - File organization
+
+2. Quick Wins
+   - Simple text editing
+   - Basic file structure
+   - Chat integration
+   - Project templates
+
+3. Future Enhancements
+   - Advanced editing
+   - Relationship mapping
+   - Timeline tracking
+   - Export options
+
+## Working Principles
+1. Simplicity First
+   - Use existing tools
+   - Minimize dependencies
+   - Focus on functionality
+   - Avoid over-engineering
+
+2. Quick Iteration
+   - Build basic features
+   - Test with users
+   - Iterate rapidly
+   - Add features as needed
+
+3. User Experience
+   - Clear navigation
+   - Simple interactions
+   - Intuitive layout
+   - Helpful responses
+
+## Agent Responsibilities
+1. Project Setup
+   - Create directory structure
+   - Initialize templates
+   - Set up basic files
+   - Configure settings
+
+2. Maintenance
+   - Update documents
+   - Organize content
+   - Track changes
+   - Maintain consistency
+
+3. User Assistance
+   - Answer questions
+   - Provide suggestions
+   - Help with writing
+   - Manage content
+
+## Implementation Steps
+1. Initial Setup
+   - Create web wrapper
+   - Set up file structure
+   - Configure agent
+   - Test basic functions
+
+2. Core Features
+   - Document viewing
+   - Chat interface
+   - File management
+   - Basic editing
+
+3. Enhancement
+   - Add templates
+   - Improve UI
+   - Add features
+   - Optimize performance
+
+## Success Criteria
+1. Functionality
+   - Working web interface
+   - Document management
+   - Chat capabilities
+   - File organization
+
+2. Usability
+   - Easy navigation
+   - Clear interface
+   - Helpful responses
+   - Quick access
+
+3. Maintenance
+   - Stable operation
+   - Easy updates
+   - Simple backups
+   - Clear documentation
+

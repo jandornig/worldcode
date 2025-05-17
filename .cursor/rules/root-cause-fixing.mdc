@@ -1,0 +1,121 @@
+---
+description: 
+globs: 
+alwaysApply: false
+---
+# Root Cause Analysis and Fixing
+
+## Overview
+This rule emphasizes the importance of identifying and fixing the root cause of issues rather than addressing symptoms. It guides the development process to ensure long-term stability and maintainability.
+
+## Core Principles
+1. Root Cause Identification
+   - Analyze error patterns
+   - Trace issue origins
+   - Understand system interactions
+   - Map dependency chains
+
+2. Problem Solving Approach
+   - Investigate before implementing fixes
+   - Document findings and analysis
+   - Consider system-wide impact
+   - Plan for long-term solutions
+
+3. Implementation Strategy
+   - Fix at the source
+   - Prevent recurrence
+   - Maintain system integrity
+   - Document changes
+
+## Examples
+1. Symptom vs Root Cause
+   - Symptom: Frequent crashes
+   - Root Cause: Memory leak in core service
+   - Fix: Implement proper resource management
+
+2. Common Patterns
+   - Symptom: Slow performance
+   - Root Cause: Inefficient algorithm
+   - Fix: Optimize core algorithm
+
+3. System Issues
+   - Symptom: Inconsistent behavior
+   - Root Cause: Race condition
+   - Fix: Implement proper synchronization
+
+## Implementation Guidelines
+1. Analysis Phase
+   - Gather error logs
+   - Review system architecture
+   - Identify patterns
+   - Map dependencies
+
+2. Solution Design
+   - Consider multiple approaches
+   - Evaluate impact
+   - Plan for scalability
+   - Document trade-offs
+
+3. Implementation
+   - Make targeted changes
+   - Maintain system stability
+   - Add monitoring
+   - Update documentation
+
+## Best Practices
+1. Investigation
+   - Use logging effectively
+   - Monitor system behavior
+   - Track error patterns
+   - Document findings
+
+2. Solution Design
+   - Consider long-term impact
+   - Plan for scalability
+   - Maintain system integrity
+   - Document decisions
+
+3. Implementation
+   - Make minimal necessary changes
+   - Test thoroughly
+   - Monitor results
+   - Update documentation
+
+## Common Pitfalls
+1. Quick Fixes
+   - Avoid temporary solutions
+   - Don't mask symptoms
+   - Consider system impact
+   - Plan for maintenance
+
+2. Incomplete Analysis
+   - Don't rush to solutions
+   - Gather all relevant data
+   - Consider all factors
+   - Document assumptions
+
+3. System Impact
+   - Consider dependencies
+   - Evaluate performance
+   - Check security implications
+   - Plan for scalability
+
+## Success Metrics
+1. System Stability
+   - Reduced error rates
+   - Improved performance
+   - Better resource usage
+   - Enhanced reliability
+
+2. Maintenance
+   - Easier debugging
+   - Clearer documentation
+   - Better monitoring
+   - Simpler updates
+
+3. Long-term Impact
+   - Sustainable solutions
+   - Scalable architecture
+   - Maintainable code
+   - Clear documentation
+
