@@ -1,0 +1,232 @@
+---
+description: 
+globs: 
+alwaysApply: false
+---
+# Worldbuilding Agent Project Guide
+
+## Project Structure
+```
+worldcode/
+├── .codex/
+│   ├── AGENTS.md           # Core agent instructions
+│   └── templates/          # Writing templates
+│       ├── game_writing.md
+│       └── fantasy_novel.md
+│
+└── projects/              # User project directory
+    └── [project_name]/    # Individual project folders
+        ├── AGENTS.md      # Project-specific guidelines
+        ├── notes.md       # Project notes and progress
+        └── [project_files]# Project-specific content
+```
+
+Example for a fantasy novel project:
+```
+worldcode/
+└── projects/
+    └── fantasy_story/
+        ├── AGENTS.md           # Project-specific writing guidelines
+        ├── worldcode.md        # Worldbuilding documentation
+        ├── storycode.md        # Story outline and structure
+        ├── story.md            # Main story text
+        ├── notes.md            # General notes, memories, and thought snippets
+        └── chapters/           # Individual chapter files
+```
+
+## Project Setup Process
+When starting a new writing project, follow these steps in order:
+
+1. Create the project directory:
+   ```
+   md projects\[project_name]
+   cd projects\[project_name]
+   ```
+
+2. Create initial project files:
+   ```
+   echo.> AGENTS.md
+   echo.> notes.md
+   ```
+
+3. Document project setup in notes.md:
+   ```
+   # Project Setup
+   - Date: [current date]
+   - Project Type: [to be determined]
+   - Initial Structure: Created
+   ```
+
+4. Determine writing focus and document in notes.md:
+   ```
+   What type of writing project would you like to work on?
+   - Game Writing
+   - Fantasy Novel Writing
+   ```
+
+5. Document requirements in notes.md:
+   ```
+   # Project Requirements
+   - Project Name:
+   - Target Audience:
+   - Main Goals:
+   - Specific Requirements:
+   ```
+
+6. Customize template and document process:
+   - Copy appropriate template from `templates/` to project directory
+   - For game writing: `copy templates\game_writing.md AGENTS.md`
+   - For fantasy novel: `copy templates\fantasy_novel.md AGENTS.md`
+   - Document customizations in notes.md
+
+7. Create project-specific files:
+   ```
+   # For fantasy novels:
+   echo.> worldcode.md
+   echo.> storycode.md
+   echo.> story.md
+   md chapters
+   
+   # For game writing:
+   echo.> outline.md
+   echo.> characters.md
+   echo.> worldbuilding.md
+   ```
+
+8. Document setup completion in notes.md:
+   ```
+   # Setup Complete
+   - All required files created
+   - Project structure established
+   - Ready for content development
+   ```
+
+## Core Components
+
+### Document Management
+- Project files are organized in a hierarchical structure
+- Each project has its own directory with standardized subdirectories
+- Files use markdown format for easy editing and version control
+- Templates are available in [templates/](mdc:worldcode/worldcode/worldcode/templates)
+- All work must be documented in project files
+- Use notes.md for:
+  - Project progress
+  - Decisions made
+  - Questions to resolve
+  - Next steps
+
+### Agent Capabilities
+The agent can:
+- Create and manage project structures
+- Update and organize documents
+- Track relationships between elements
+- Provide writing assistance
+- Maintain consistency across the project
+- Story development and plot structuring
+- Character creation and development
+- World-building and setting creation
+- Dialogue writing and natural conversation flow
+- Narrative pacing and tension management
+- Theme exploration and symbolism
+- Editing and revision suggestions
+- Style and tone consistency
+
+### Web Interface
+The interface is built on top of the Codex CLI with:
+- Document viewer/editor
+- Chat interface for agent interaction
+- Project navigation
+- File management tools
+
+## Development Guidelines
+
+### Quick Start
+1. Use existing Codex CLI as the foundation
+2. Add web wrapper for interface
+3. Implement core features first
+4. Keep implementation simple and functional
+
+### Working Principles
+- Prioritize functionality over perfection
+- Use existing tools when possible
+- Focus on user experience
+- Maintain clear documentation
+- Document first, explain second
+- Keep all work in project files
+- Use notes.md for process documentation
+- Maintain consistent file structure
+- Track progress in project files
+- Document all decisions and changes
+
+### Implementation Priorities
+1. Essential Features:
+   - Basic web interface
+   - Document management
+   - Chat functionality
+   - File organization
+
+2. Quick Wins:
+   - Simple text editing
+   - Basic file structure
+   - Chat integration
+   - Project templates
+
+## Specialization Guidelines
+
+### Game Writing
+- Document in outline.md
+- Track in characters.md
+- Develop in worldbuilding.md
+- Focus on:
+  - Game mechanics integration
+  - Interactive storytelling
+  - Character dialogue
+  - World consistency
+
+### Fantasy Novel Writing
+- Document in worldcode.md
+- Structure in storycode.md
+- Write in story.md
+- Organize chapters in chapters/
+- Focus on:
+  - Worldbuilding depth
+  - Character development
+  - Plot structure
+  - Magic systems
+
+## Agent Responsibilities
+
+### Project Setup
+- Creates standardized directory structure
+- Initializes project templates
+- Sets up basic configuration
+- Establishes file organization
+
+### Maintenance
+- Updates and organizes documents
+- Tracks changes and relationships
+- Maintains consistency
+- Manages project structure
+- Helps users track progress against milestones
+- Provides regular check-ins on project goals
+- Suggests adjustments to project plan
+- Maintains consistency with chosen specialization
+
+### User Assistance
+- Provides writing guidance
+- Answers project questions
+- Suggests improvements
+- Helps with content organization
+
+## Success Metrics
+- Working web interface
+- Functional document management
+- Effective chat capabilities
+- Clear project organization
+- Intuitive user experience
+- Stable operation
+- Easy maintenance
+
+
+
+
